@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.0
+pvlib>=0.11
+fastapi>=0.110
+uvicorn>=0.29
+openpyxl>=3.1

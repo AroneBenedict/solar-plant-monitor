@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Plant Monitor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Solar Plant Monitor</h1>
+    <label>Plant <select id="plant"></select></label>
+  </header>
+  <main>
+    <section class="cards" id="cards"></section>
+    <section class="panel">
+      <h2>Daily energy and performance ratio</h2>
+      <canvas id="daily" height="110"></canvas>
+    </section>
+    <section class="grid">
+      <div class="panel">
+        <h2>Inverters (lowest energy first)</h2>
+        <table id="inverters"><thead><tr><th>Inverter</th><th>Energy (MWh)</th><th>Availability</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Data quality</h2>
+        <div id="quality"></div>
+        <h2>Monthly report</h2>
+        <form id="report"><input type="month" id="month" required> <button>Download Excel</button></form>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Open alerts, largest energy loss first</h2>
+      <table id="alerts"><thead><tr><th>Device</th><th>Type</th><th>Start</th><th>Lost kWh</th><th>Detail</th><th>Status</th><th></th></tr></thead><tbody></tbody></table>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+{
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "summary": {
+    "by_kind": {
+      "inverter_trip": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "median_delay_h": 1.1267,
+        "events": 525
+      },
+      "string_failure": {
+        "precision": 0.9346,
+        "recall": 1.0,
+        "median_delay_h": 21.21,
+        "events": 203
+      },
+      "sensor_stuck": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "median_delay_h": 3.9167,
+        "events": 61
+      },
+      "comm_loss": {
+        "precision": 1.0,
+        "recall": 0.9942,
+        "median_delay_h": 0.75,
+        "events": 349
+      }
+    },
+    "production_faults": {
+      "peer_comparison": {
+        "precision": 0.9861,
+        "recall": 1.0,
+        "median_delay_h": 5.0,
+        "alerts": 733
+      },
+      "sensor_baseline": {
+        "precision": 0.7383,
+        "recall": 0.9644,
+        "median_delay_h": 3.79,
+        "alerts": 3034
+      }
+    },
+    "lost_energy_error": -0.1355,
+    "rows_received": 2513437,
+    "rows_rejected": 6272
+  },
+  "runs": [
+    {
+      "seed": 11,
+      "data_quality": {
+        "received": 838957,
+        "loaded": 836863,
+        "rejected": 2094,
+        "by_reason": {
+          "ac_out_of_range": 419,
+          "duplicate": 1675
+        }
+      },
+      "truth_events": 385,
+      "observable_events": 368,
+      "by_kind": {
+        "inverter_trip": {
+          "truth": 168,
+          "detected": 165,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 2.38
+        },
+        "string_failure": {
+          "truth": 69,
+          "detected": 75,
+          "precision": 0.9333,
+          "recall": 1.0,
+          "median_delay_h": 18.25
+        },
+        "sensor_stuck": {
+          "truth": 20,
+          "detected": 20,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 2.25
+        },
+        "comm_loss": {
+          "truth": 111,
+          "detected": 111,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 0.75
+        }
+      },
+      "production_faults": {
+        "peer_comparison": {
+          "truth": 237,
+          "detected": 240,
+          "precision": 0.9792,
+          "recall": 1.0,
+          "median_delay_h": 5.25
+        },
+        "sensor_baseline": {
+          "truth": 237,
+          "detected": 946,
+          "precision": 0.7008,
+          "recall": 0.9831,
+          "median_delay_h": 3.0
+        }
+      },
+      "lost_energy": {
+        "true_mwh": 360.8,
+        "estimated_mwh": 314.3,
+        "error": -0.1289
+      },
+      "plant_kpis": [
+        {
+          "plant_id": "BLR",
+          "mwh": 3810.4,
+          "pr": 0.814,
+          "availability": 0.9798
+        },
+        {
+          "plant_id": "JDH",
+          "mwh": 4545.0,
+          "pr": 0.787,
+          "availability": 0.9608
+        },
+        {
+          "plant_id": "MAA",
+          "mwh": 2783.8,
+          "pr": 0.8,
+          "availability": 0.9615
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "data_quality": {
+        "received": 837105,
+        "loaded": 835016,
+        "rejected": 2089,
+        "by_reason": {
+          "ac_out_of_range": 418,
+          "duplicate": 1671
+        }
+      },
+      "truth_events": 413,
+      "observable_events": 392,
+      "by_kind": {
+        "inverter_trip": {
+          "truth": 183,
+          "detected": 179,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 0.5
+        },
+        "string_failure": {
+          "truth": 76,
+          "detected": 82,
+          "precision": 0.9512,
+          "recall": 1.0,
+          "median_delay_h": 20.88
+        },
+        "sensor_stuck": {
+          "truth": 19,
+          "detected": 20,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 6.0
+        },
+        "comm_loss": {
+          "truth": 114,
+          "detected": 111,
+          "precision": 1.0,
+          "recall": 0.9825,
+          "median_delay_h": 0.75
+        }
+      },
+      "production_faults": {
+        "peer_comparison": {
+          "truth": 259,
+          "detected": 261,
+          "precision": 0.9962,
+          "recall": 1.0,
+          "median_delay_h": 6.0
+        },
+        "sensor_baseline": {
+          "truth": 259,
+          "detected": 1070,
+          "precision": 0.8187,
+          "recall": 0.9575,
+          "median_delay_h": 4.12
+        }
+      },
+      "lost_energy": {
+        "true_mwh": 427.4,
+        "estimated_mwh": 362.3,
+        "error": -0.1525
+      },
+      "plant_kpis": [
+        {
+          "plant_id": "BLR",
+          "mwh": 3800.9,
+          "pr": 0.814,
+          "availability": 0.9709
+        },
+        {
+          "plant_id": "JDH",
+          "mwh": 4490.0,
+          "pr": 0.781,
+          "availability": 0.9691
+        },
+        {
+          "plant_id": "MAA",
+          "mwh": 2794.6,
+          "pr": 0.799,
+          "availability": 0.9607
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "data_quality": {
+        "received": 837375,
+        "loaded": 835286,
+        "rejected": 2089,
+        "by_reason": {
+          "ac_out_of_range": 418,
+          "duplicate": 1671
+        }
+      },
+      "truth_events": 396,
+      "observable_events": 378,
+      "by_kind": {
+        "inverter_trip": {
+          "truth": 174,
+          "detected": 170,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 0.5
+        },
+        "string_failure": {
+          "truth": 58,
+          "detected": 62,
+          "precision": 0.9194,
+          "recall": 1.0,
+          "median_delay_h": 24.5
+        },
+        "sensor_stuck": {
+          "truth": 22,
+          "detected": 21,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 3.5
+        },
+        "comm_loss": {
+          "truth": 124,
+          "detected": 124,
+          "precision": 1.0,
+          "recall": 1.0,
+          "median_delay_h": 0.75
+        }
+      },
+      "production_faults": {
+        "peer_comparison": {
+          "truth": 232,
+          "detected": 232,
+          "precision": 0.9828,
+          "recall": 1.0,
+          "median_delay_h": 3.75
+        },
+        "sensor_baseline": {
+          "truth": 232,
+          "detected": 1018,
+          "precision": 0.6955,
+          "recall": 0.9526,
+          "median_delay_h": 4.25
+        }
+      },
+      "lost_energy": {
+        "true_mwh": 353.1,
+        "estimated_mwh": 308.9,
+        "error": -0.1252
+      },
+      "plant_kpis": [
+        {
+          "plant_id": "BLR",
+          "mwh": 3805.6,
+          "pr": 0.816,
+          "availability": 0.98
+        },
+        {
+          "plant_id": "JDH",
+          "mwh": 4532.1,
+          "pr": 0.783,
+          "availability": 0.9585
+        },
+        {
+          "plant_id": "MAA",
+          "mwh": 2784.9,
+          "pr": 0.8,
+          "availability": 0.9655
+        }
+      ]
+    }
+  ],
+  "seconds": 57.2
+}
